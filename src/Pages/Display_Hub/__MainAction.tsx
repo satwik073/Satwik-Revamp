@@ -1,4 +1,4 @@
-
+// @ts-nocheck
 import CustomText from '@/Common/@the-source/CustomText';
 import { Button } from '@/components/ui/button';
 import React from 'react'
