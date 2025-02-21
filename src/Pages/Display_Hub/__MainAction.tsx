@@ -1,4 +1,4 @@
-// @ts-nocheck
+
 import CustomText from '@/Common/@the-source/CustomText';
 import { Button } from '@/components/ui/button';
 import React from 'react'
@@ -6,6 +6,7 @@ import { Box, Grid, Grid2 } from '@mui/material';
 import { BoxTypeIdentifier } from '@/Constants/__config_parameters';
 import ProductImage from '@/Common/Molecules/ImageContainer';
 import ImageLinks from '@/assets';
+import _ from 'lodash'; 
 import { Icon24Hours, IconBrandLinkedin } from '@tabler/icons-react'
 interface MainSectionPropsComponent {
     imageLink?: any,
@@ -16,14 +17,13 @@ interface MainSectionPropsComponent {
     __scrapButton?: string,
     __scrapText?: string,
     highlightMenu?: boolean,
-    _high_ImageLinks?: any;
-    _high_TextProps?: typeof CustomText;
+    content? : any,
     classNameAttributes?: string;
 }
 
 
 
-const MainAction = ({ imageLink, captionDisplay, titleRender, descriptionHandler, subDivisionSection, __scrapButton, __scrapText, _high_ImageLinks, _high_TextProps, highlightMenu, classNameAttributes }: MainSectionPropsComponent) => {
+const MainAction = ({ imageLink, captionDisplay, titleRender,content, descriptionHandler, subDivisionSection, __scrapButton, __scrapText,  highlightMenu, classNameAttributes }: MainSectionPropsComponent) => {
     const handle_render_imageLink = () => {
         return (
             <React.Fragment>
@@ -82,12 +82,41 @@ const MainAction = ({ imageLink, captionDisplay, titleRender, descriptionHandler
             </React.Fragment>
         )
     }
+    const handle_render_content = () => {
+        return (
+            <React.Fragment>
+                <Grid container spacing={2} justifyContent="center" alignItems="center">
+                    {/* Loop through the content array and render each item */}
+                    {_.map( content, (item, index) => (
+                        <Grid item xs={12} sm={4}  key={index}>
+                            <Box display="flex" gap={2} alignItems="center" justifyContent="center">
+                                {/* You can replace the icon with actual components or use Iconify */}
+                                <Box
+                                
+                                    display="flex"
+                                    alignItems="center"
+                                    justifyContent="center"
+                                    className="p-2 rounded-full border border-neutral-600"
+                                >
+                                  <item.icon size={40} fontWeight={300}  className ='font-normal p-1'/>
+                                </Box>
+                                <CustomText className="text-[#FFFFFFBF] font-extrabold text-left max-w-[150px] text-[16px]">
+                                    {item.label}
+                                </CustomText>
+                            </Box>
+                        </Grid>
+                    ))}
+                </Grid>
+            </React.Fragment>
+        );
+    };
     return (
         <Grid2 display='flex' justifyContent='center' width={'100%'}>
             <Grid display='flex' direction={'column'} justifyContent='center' alignItems={'center'} gap={2} width={'100%'} maxWidth={'1100px'}>
                 {handle_render_imageLink()}
                 {handle_render_capTitle()}
                 {handle_render_subSection()}
+                {handle_render_content()}
             </Grid>
         </Grid2>
     )
