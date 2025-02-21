@@ -2,11 +2,11 @@
 import CustomText from '@/Common/@the-source/CustomText';
 import { Button } from '@/components/ui/button';
 import React from 'react'
-import { Grid, Grid2 } from '@mui/material';
+import { Box, Grid, Grid2 } from '@mui/material';
 import { BoxTypeIdentifier } from '@/Constants/__config_parameters';
 import ProductImage from '@/Common/Molecules/ImageContainer';
 import ImageLinks from '@/assets';
-
+import { Icon24Hours, IconBrandLinkedin } from '@tabler/icons-react'
 interface MainSectionPropsComponent {
     imageLink?: any,
     captionDisplay?: string,
@@ -29,7 +29,7 @@ const MainAction = ({ imageLink, captionDisplay, titleRender, descriptionHandler
             <React.Fragment>
                 {!!imageLink && (
                     <BoxTypeIdentifier.Default
-                        className='p-2 rounded-full w-16 h-16 bg-[#9cee6a] flex items-center justify-center'
+                        className='p-2 rounded-full w-12 h-12 bg-[#9cee6a] flex items-center justify-center'
                         style={{ overflow: 'hidden' }}
                     >
                         <ProductImage
@@ -48,15 +48,25 @@ const MainAction = ({ imageLink, captionDisplay, titleRender, descriptionHandler
         return (
             <React.Fragment>
                 {subDivisionSection && (
-                    <BoxTypeIdentifier.Default
-                        className='p-2 rounded-full flex items-center justify-center'
-                        style={{ overflow: 'hidden' }}
-                    >
-                       <Button className='bg-[#9cee6a] px-3 tracking-tight   h-[3.25rem] rounded-lg text-[#194200] text-[16px] font-[600]'>
-                        <ProductImage  Dimensions={{Height:40, Width:30}} ImageSource={ImageLinks?.__Elite}/>{__scrapButton ?? '__transformed_btm'}</Button>
-                    </BoxTypeIdentifier.Default>
-
+                    <Box width={'100%'} className='sm:max-w-md max-w-xs px-0 sm:flex sm:flex-row items-center  justify-between'>
+                        <BoxTypeIdentifier.Default
+                            className='rounded-xl flex sm:w-2/3 m-4 items-center bg-[#9cee6a] items-center justify-center'
+                            style={{ overflow: 'hidden' }}
+                        >
+                            <Button
+                                style={{ fontWeight: 800 }}
+                                className=' px-3 py-2 tracking-tight bg-[#9cee6a] flex items-center h-[3.25rem] text-[#194200] text-[16px] justify-center'
+                            >
+                                <BoxTypeIdentifier.Default style={{background:'rgba(144, 145, 156, 0.35)'}} className='p-2 rounded-full'>
+                                    <ProductImage ImageSource={'https://api.iconify.design/simple-icons:envato.svg'} Dimensions={{ Width: 25 }} />
+                                </BoxTypeIdentifier.Default>
+                                {__scrapButton}
+                            </Button>
+                        </BoxTypeIdentifier.Default>
+                        <CustomText type={'Body'} className='text-[#91929B] text-[14px]'>{__scrapText}</CustomText>
+                    </Box>
                 )}
+
             </React.Fragment>
         )
     }
@@ -66,7 +76,7 @@ const MainAction = ({ imageLink, captionDisplay, titleRender, descriptionHandler
                 {(!!captionDisplay || !!titleRender) && (
                     <React.Fragment>
                         <CustomText className={'text-[16px] font-bold text-[#FFFFFFBF]'}>{captionDisplay ?? '__transformed_text'}</CustomText>
-                        <CustomText className={' md:text-6xl  text-5xl text-center font-bold text-white max-w-xl'}>{titleRender ?? '__transformed_text'}</CustomText>
+                        <CustomText className={' md:text-[4vw] tracking-tight  text-5xl text-center font-bold text-white max-w-md xl:max-w-3xl'}>{titleRender ?? '__transformed_text'}</CustomText>
                     </React.Fragment>
                 )}
             </React.Fragment>
