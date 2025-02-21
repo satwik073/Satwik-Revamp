@@ -50,12 +50,12 @@ const MainAction = ({ imageLink, captionDisplay, titleRender, descriptionHandler
                 {subDivisionSection && (
                     <Box width={'100%'} className='sm:max-w-md max-w-xs px-0 sm:flex sm:flex-row items-center  justify-between'>
                         <BoxTypeIdentifier.Default
-                            className='rounded-xl flex sm:w-2/3 m-4 items-center bg-[#9cee6a] items-center justify-center'
+                            className='rounded-xl flex sm:w-2/3 m-4 items-center items-center justify-center'
                             style={{ overflow: 'hidden' }}
                         >
                             <Button
                                 style={{ fontWeight: 800 }}
-                                className=' px-3 py-2 tracking-tight bg-[#9cee6a] flex items-center h-[3.25rem] text-[#194200] text-[16px] justify-center'
+                                className=' px-3 py-2 tracking-tight rounded-xl w-full bg-[#9cee6a] flex items-center h-[3.25rem] text-[#194200] text-[16px] justify-center'
                             >
                                 <BoxTypeIdentifier.Default style={{background:'rgba(144, 145, 156, 0.35)'}} className='p-2 rounded-full'>
                                     <ProductImage ImageSource={'https://api.iconify.design/simple-icons:envato.svg'} Dimensions={{ Width: 25 }} />
