@@ -2,7 +2,15 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+
   text-align: center;
+}
+
+body{
+  background-color: #0E0E10;
+}
+::selection{
+  background-color: rgb(76, 0, 0);
 }
 
 .logo {
@@ -11,7 +19,7 @@
   will-change: filter;
   transition: filter 300ms;
   
-}
+}a
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
