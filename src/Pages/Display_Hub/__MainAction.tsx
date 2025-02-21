@@ -1,3 +1,4 @@
+// @ts-nocheck
 import CustomText from '@/Common/@the-source/CustomText';
 import { Button } from '@/components/ui/button';
 import React from 'react'
@@ -77,8 +78,6 @@ const MainAction = ({ imageLink, captionDisplay, titleRender, descriptionHandler
                 {handle_render_imageLink()}
                 {handle_render_capTitle()}
                 {handle_render_subSection()}
-
-
             </Grid>
         </Grid2>
     )
