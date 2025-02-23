@@ -1,27 +1,30 @@
 #root {
-  
+
   margin: 0 auto;
 
   text-align: center;
 }
 
-body{
+/* body {
   background-color: #0E0E10;
-}
-::selection{
+} */
+
+::selection {
   background-color: rgb(76, 0, 0);
 }
 
-.logo {a
-  height: 6em;
+.logo {
+  a height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
-  
-}a
-.logo:hover {
+
+}
+
+a .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -30,6 +33,7 @@ body{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -85,6 +89,215 @@ body{
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 8px;
+    padding: 30px;
+  }
+
+  .parent>div {
+    height: 10rem;
+    text-align: left;
+    border-radius: 20px;
+    color: #000;
+    background: #ffffff;
+  }
+
+  .div2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  .div3 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  .div4 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .div5 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+
+  .div6 {
+    grid-column-start: 2;
+    grid-row-start: 4;
+  }
+
+  .div7 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+
+  .div8 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+
+  .div9 {
+    grid-column-start: 4;
+    grid-row-start: 1;
+  }
+
+  .div10 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+  }
+
+  .div11 {
+    grid-column-start: 4;
+    grid-row-start: 3;
+  }
+
+  .div12 {
+    grid-column-start: 4;
+    grid-row-start: 4;
+  }
+
+  /* Media Queries for Responsiveness */
+
+  /* For medium screens (like tablets) */
+  @media (max-width: 768px) {
+    .parent {
+      grid-template-columns: repeat(2, 1fr);
+      /* 2 columns */
+      grid-template-rows: repeat(6, 1fr);
+      /* Adjust rows for more space */
+    }
+
+    .div2 {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
+
+    .div3 {
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
+
+    .div4 {
+      grid-column-start: 2;
+      grid-row-start: 1;
+    }
+
+    .div5 {
+      grid-column-start: 1;
+      grid-row-start: 3;
+    }
+
+    .div6 {
+      grid-column-start: 2;
+      grid-row-start: 3;
+    }
+
+    .div7 {
+      grid-column-start: 1;
+      grid-row-start: 4;
+    }
+
+    .div8 {
+      grid-column-start: 2;
+      grid-row-start: 4;
+    }
+
+    .div9 {
+      grid-column-start: 1;
+      grid-row-start: 5;
+    }
+
+    .div10 {
+      grid-column-start: 2;
+      grid-row-start: 5;
+    }
+
+    .div11 {
+      grid-column-start: 1;
+      grid-row-start: 6;
+    }
+
+    .div12 {
+      grid-column-start: 2;
+      grid-row-start: 6;
+    }
+  }
+
+  /* For smaller screens (like mobile devices) */
+  @media (max-width: 480px) {
+    .parent {
+      grid-template-columns: 1fr;
+      /* 1 column */
+      grid-template-rows: repeat(12, 1fr);
+      /* Stack all items */
+    }
+
+    .div2 {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
+
+    .div3 {
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
+
+    .div4 {
+      grid-column-start: 1;
+      grid-row-start: 3;
+    }
+
+    .div5 {
+      grid-column-start: 1;
+      grid-row-start: 4;
+    }
+
+    .div6 {
+      grid-column-start: 1;
+      grid-row-start: 5;
+    }
+
+    .div7 {
+      grid-column-start: 1;
+      grid-row-start: 6;
+    }
+
+    .div8 {
+      grid-column-start: 1;
+      grid-row-start: 7;
+    }
+
+    .div9 {
+      grid-column-start: 1;
+      grid-row-start: 8;
+    }
+
+    .div10 {
+      grid-column-start: 1;
+      grid-row-start: 9;
+    }
+
+    .div11 {
+      grid-column-start: 1;
+      grid-row-start: 10;
+    }
+
+    .div12 {
+      grid-column-start: 1;
+      grid-row-start: 11;
+    }
+  }
+
+  .testimonials {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #D90A2C14 0%, #8F00FF14 50%);
+  }
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -125,6 +338,7 @@ body{
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
