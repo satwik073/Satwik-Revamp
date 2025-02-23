@@ -5,6 +5,7 @@ import ImageLinks from './assets';
 
 import MainAction from './Pages/Display_Hub/__MainAction';
 import FooterNavigation from './Global/PedestialNavs/FooterNavigation';
+import GlowingEffect from './Pages/GlowingEffect';
 
 
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
     { icon: IconLayoutDashboard, label: 'High quality templates' },
     { icon: IconAdjustmentsHorizontal, label: 'Advanced Coding skills' },
     { icon: IconProgressDown, label: 'Simple demo installation' },
-    { icon: IconArrowRightToArc, label: 'Reliable updates' }
+    { icon: IconArrowRightToArc, label: 'Reliable regular updates' }
   ];
 
   return (
@@ -21,6 +22,10 @@ const App = () => {
       {/* <CursorDispatcher /> */}
       <MainAction imageLink={ImageLinks?.__Elite} captionDisplay='Power Elite Author' titleRender='The all‐in‐one WordPress theme to build beautiful sites.' subDivisionSection __scrapButton={'Go to LinkedIn'} __scrapText='Life-time license, free updates
 and 6 months of free support.' highlightMenu content={content} />
+      <div className=' bg-white'>
+
+       <GlowingEffect/>
+      </div>
       <FooterNavigation />
     </div>
   );
