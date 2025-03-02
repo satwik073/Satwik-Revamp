@@ -19,7 +19,7 @@ const GlowingEffect = () => {
 
             find out why below.
           </h2>
-          <p className="mb-[3rem] text-[16.22px]    w-full">
+          <p className="md:mb-[3rem] mb-3 text-[16.22px]    w-full">
             With a 4.85 out of 5 average rating on Envato Market.
           </p></Grid>
         <Grid  gap={6} className="md:flex   md:mb-0 mb-5 w-full justify-center">
@@ -78,7 +78,7 @@ const GlowingEffect = () => {
 
         <Grid className="flex w-full justify-center mt-12 px-6 mb-12 ">
 
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-center max-w-7xl gap-4 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-center max-w-7xl -gap-5 md:mt-0 md:gap-4 w-full">
             {/* First Amber BG div with nested divs */}
             <div className="w-full  ">
               <div className="">
