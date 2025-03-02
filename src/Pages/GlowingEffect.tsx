@@ -29,7 +29,7 @@ const GlowingEffect = () => {
               className=" font-bold"
               style={{ overflow: "hidden" }}
             >
-              <span className=" flex mt-4" >9+</span>
+        <span className=" flex mt-4 text-[38px]" >9+</span>
             </BoxTypeIdentifier.Default>
 
             <span className="text-[17px] tracking-tight flex flex-col font-bold text-center mt-2">
@@ -61,7 +61,7 @@ const GlowingEffect = () => {
               className=" font-bold"
               style={{ overflow: "hidden" }}
             >
-             <span className=" flex mt-4" >19k +</span>
+             <span className=" flex mt-4 text-[38px]" >19k+</span>
             </BoxTypeIdentifier.Default>
 
             <span className="text-[17px] tracking-tight flex flex-col font-bold text-center mt-2">
