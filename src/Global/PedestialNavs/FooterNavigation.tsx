@@ -13,7 +13,7 @@ type Props = {}
 const FooterNavigation = (props: Props) => {
     return (
         <React.Fragment>
-            <div className="bg-[#161519] text-white py-16 relative lg:px-8 px-12 overflow-hidden">
+            <div className="bg-[#161519] text-white py-16 relative lg:px-8 px-6 overflow-hidden">
                 {/* Call to Action Section */}
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between relative z-10">
                     <div className="lg:w-1/2 text-left">
