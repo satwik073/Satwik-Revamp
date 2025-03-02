@@ -26,7 +26,7 @@ const GlowingEffect = () => {
 
           <Grid direction={"column"} className="gap-1.5 md:mb-0 mb-5 flex flex-col items-center">
             <BoxTypeIdentifier.Default
-              className=" font-bold text-[12px]"
+              className=" font-bold"
               style={{ overflow: "hidden" }}
             >
               <h1 className=" flex mt-4" >9+</h1>
@@ -41,7 +41,7 @@ const GlowingEffect = () => {
           </Grid>
           <Grid direction={"column"} className="flex  md:mb-0 mb-5 flex-col items-center">
             <BoxTypeIdentifier.Default
-              className="p-2 rounded-full w-16 h-16 bg-[#9cee6a] flex items-center justify-center"
+              className="p-2 rounded-full w-20 h-20 bg-[#9cee6a] flex items-center justify-center"
               style={{ overflow: "hidden" }}
             >
               <ProductImage
@@ -58,7 +58,7 @@ const GlowingEffect = () => {
           </Grid>
           <Grid direction={"column"} className="gap-1.5 flex flex-col items-center">
             <BoxTypeIdentifier.Default
-              className=" font-bold text-[12px] h-14.5"
+              className=" font-bold"
               style={{ overflow: "hidden" }}
             >
              <h1 className=" flex mt-4" >19k +</h1>
