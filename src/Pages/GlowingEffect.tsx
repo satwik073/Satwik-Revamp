@@ -26,10 +26,10 @@ const GlowingEffect = () => {
 
           <Grid direction={"column"} className="gap-1.5 md:mb-0 mb-5 flex flex-col items-center">
             <BoxTypeIdentifier.Default
-              className=" font-bold text-[12px] w-14 h-14.5"
+              className=" font-bold text-[12px]"
               style={{ overflow: "hidden" }}
             >
-              <h1 className=" flex items-center  justify-center mt-4" >9+</h1>
+              <h1 className=" flex mt-4" >9+</h1>
             </BoxTypeIdentifier.Default>
 
             <span className="text-[17px] tracking-tight flex flex-col font-bold text-center mt-2">
@@ -58,10 +58,10 @@ const GlowingEffect = () => {
           </Grid>
           <Grid direction={"column"} className="gap-1.5 flex flex-col items-center">
             <BoxTypeIdentifier.Default
-              className=" font-bold text-[12px] w-16 h-14.5"
+              className=" font-bold text-[12px] h-14.5"
               style={{ overflow: "hidden" }}
             >
-             <h1 className=" flex items-center mt-4" >19k +</h1>
+             <h1 className=" flex mt-4" >19k +</h1>
             </BoxTypeIdentifier.Default>
 
             <span className="text-[17px] tracking-tight flex flex-col font-bold text-center mt-2">
@@ -76,7 +76,7 @@ const GlowingEffect = () => {
         </Grid>
        
 
-        <Grid className="flex w-full justify-center mt-12 px-12 mb-12 ">
+        <Grid className="flex w-full justify-center mt-12 px-6 mb-12 ">
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-center max-w-7xl gap-4 w-full">
             {/* First Amber BG div with nested divs */}
