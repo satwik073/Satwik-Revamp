@@ -111,7 +111,7 @@ const MainAction = ({ imageLink, captionDisplay, titleRender, content, descripti
         );
     };
     return (
-        <Grid2 display='flex' justifyContent='center' width={'100%'}>
+        <Grid2 display='flex' justifyContent='center' width={'100%'} py={12}>
             <Grid display='flex' direction={'column'} justifyContent='center' alignItems={'center'} gap={2} width={'100%'} maxWidth={'1400px'}>
                 {handle_render_imageLink()}
                 {handle_render_capTitle()}
