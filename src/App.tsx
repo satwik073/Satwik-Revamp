@@ -4,12 +4,14 @@ import {
   IconBrandDribbble,
   IconLayoutDashboard,
   IconProgressDown,
+  IconChevronRight,
   IconAdjustmentsHorizontal,
   IconArrowRightToArc,
 } from '@tabler/icons-react';
+import { FlickeringGrid } from './components/magicui/flickering-grid';
 
 // import MainAction from './Pages/Display_Hub/__MainAction';
-// import FooterNavigation from './Global/PedestialNavs/FooterNavigation';
+// import FooterNavigation from './Global/PedestialNavs/FooterNavi`gation';
 
 const App = () => {
   // const content = [
@@ -31,7 +33,7 @@ const App = () => {
       </div>
     </div> */}
       <a 
-        className="safe-paddings relative z-50 flex w-full items-center justify-center gap-x-2.5 overflow-hidden px-4 py-2.5 leading-none transition-colors duration-200 dark:bg-[#0B0C0F] bg-[#F5FBFD]" 
+        className="safe-paddings relative z-50 flex w-full items-center justify-center gap-x-2.5 overflow-hidden h-9 px-4 py-2.5 leading-none transition-colors duration-200 dark:bg-[#0B0C0F] bg-[#F5FBFD]" 
         href="https://neon.tech/blog/hipaa-multitenancy-b2b-saas"
       >
         {/* Gradient Background Layers */}
@@ -75,18 +77,19 @@ const App = () => {
           Learn how Neon simplifies HIPAA compliance and scaling for multi-tenant SaaS
         </span>
         
-        {/* Arrow Icon */}
-        <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          width="16" 
-          height="16" 
-          fill="none" 
-          viewBox="0 0 16 16" 
-          className="relative z-50 w-[9px] shrink-0 origin-center -rotate-90 opacity-60 dark:text-white text-black-new"
-        >
-          <path stroke="currentColor" strokeWidth="1.4" d="m15 5-7 7-7-7"></path>
-        </svg>
+       
+       <IconChevronRight color={'#E4E5E7'}/>
       </a>
+      <FlickeringGrid
+        className="absolute inset-0 z-0 size-full"
+        squareSize={4}
+        gridGap={6}
+        color="#6B7280"
+        maxOpacity={0.5}
+        flickerChance={0.1}
+        height={800}
+        width={800}
+      />
     </div>
   );
 };
