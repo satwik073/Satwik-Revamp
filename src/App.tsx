@@ -1,3 +1,4 @@
+/* eslint-disable*/
 import {
   IconBrandDribbble,
   IconLayoutDashboard,
@@ -20,6 +21,14 @@ const App = () => {
 
   return (
     <div className="w-full bg-black/10">
+    {/* <div 
+      className="absolute -bottom-1.5 left-1/2 aspect-[3.49726] w-[640px] -translate-x-1/2 mix-blend-lighten xl:w-[568px] lg:w-[417px] md:bottom-0 md:h-40 md:w-full md:[mask-image:linear-gradient(to_bottom,black,black_calc(100%-40px),transparent)] sm:overflow-hidden transition-opacity duration-300 md:h-40 md:min-w-[560px]"
+      aria-hidden="true"
+    >
+      <div style={{ width: '100%', height: '100%' }}>
+        <canvas width="1120" height="320" style={{ verticalAlign: 'top', width: '560px', height: '160px' }}></canvas>
+      </div>
+    </div> */}
       <a 
         className="safe-paddings relative z-50 flex w-full items-center justify-center gap-x-2.5 overflow-hidden px-4 py-2.5 leading-none transition-colors duration-200 dark:bg-[#0B0C0F] bg-[#F5FBFD]" 
         href="https://neon.tech/blog/hipaa-multitenancy-b2b-saas"
