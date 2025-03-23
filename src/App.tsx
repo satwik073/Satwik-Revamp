@@ -7,17 +7,17 @@ import {
   IconArrowRightToArc,
 } from '@tabler/icons-react';
 
-import MainAction from './Pages/Display_Hub/__MainAction';
-import FooterNavigation from './Global/PedestialNavs/FooterNavigation';
+// import MainAction from './Pages/Display_Hub/__MainAction';
+// import FooterNavigation from './Global/PedestialNavs/FooterNavigation';
 
 const App = () => {
-  const content = [
-    { icon: IconBrandDribbble, label: 'Figma design source files' },
-    { icon: IconLayoutDashboard, label: 'High quality templates' },
-    { icon: IconAdjustmentsHorizontal, label: 'Advanced Coding skills' },
-    { icon: IconProgressDown, label: 'Simple demo installation' },
-    { icon: IconArrowRightToArc, label: 'Reliable regular updates' },
-  ];
+  // const content = [
+  //   { icon: IconBrandDribbble, label: 'Figma design source files' },
+  //   { icon: IconLayoutDashboard, label: 'High quality templates' },
+  //   { icon: IconAdjustmentsHorizontal, label: 'Advanced Coding skills' },
+  //   { icon: IconProgressDown, label: 'Simple demo installation' },
+  //   { icon: IconArrowRightToArc, label: 'Reliable regular updates' },
+  // ];
 
   return (
     <div className="w-full bg-black/10">
