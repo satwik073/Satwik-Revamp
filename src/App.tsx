@@ -8,35 +8,15 @@ import {
   IconAdjustmentsHorizontal,
   IconArrowRightToArc,
 } from '@tabler/icons-react';
-import { FlickeringGrid } from './components/magicui/flickering-grid';
-
-// import MainAction from './Pages/Display_Hub/__MainAction';
-// import FooterNavigation from './Global/PedestialNavs/FooterNavi`gation';
+import { FlickeringGrid } from './components/magicui/flickering-grid'
 
 const App = () => {
-  // const content = [
-  //   { icon: IconBrandDribbble, label: 'Figma design source files' },
-  //   { icon: IconLayoutDashboard, label: 'High quality templates' },
-  //   { icon: IconAdjustmentsHorizontal, label: 'Advanced Coding skills' },
-  //   { icon: IconProgressDown, label: 'Simple demo installation' },
-  //   { icon: IconArrowRightToArc, label: 'Reliable regular updates' },
-  // ];
-
   return (
     <div className="w-full bg-black/10">
-    {/* <div 
-      className="absolute -bottom-1.5 left-1/2 aspect-[3.49726] w-[640px] -translate-x-1/2 mix-blend-lighten xl:w-[568px] lg:w-[417px] md:bottom-0 md:h-40 md:w-full md:[mask-image:linear-gradient(to_bottom,black,black_calc(100%-40px),transparent)] sm:overflow-hidden transition-opacity duration-300 md:h-40 md:min-w-[560px]"
-      aria-hidden="true"
-    >
-      <div style={{ width: '100%', height: '100%' }}>
-        <canvas width="1120" height="320" style={{ verticalAlign: 'top', width: '560px', height: '160px' }}></canvas>
-      </div>
-    </div> */}
       <a 
         className="safe-paddings relative z-50 flex w-full items-center justify-center gap-x-2.5 overflow-hidden h-9 px-4 py-2.5 leading-none transition-colors duration-200 dark:bg-[#0B0C0F] bg-[#F5FBFD]" 
         href="https://neon.tech/blog/hipaa-multitenancy-b2b-saas"
       >
-        {/* Gradient Background Layers */}
         <span 
           className="absolute left-1/3 -z-10 h-[106px] w-[29px] origin-center -translate-y-1/2 rotate-[226deg] rounded-full mix-blend-plus-lighter blur-xl dark:opacity-100 sm:left-[35%] -top-2 z-40 bg-[linear-gradient(265.08deg,#FFFFFF_52.92%,rgba(255,255,255,0)_53.57%)] opacity-70"
         ></span>
@@ -59,7 +39,6 @@ const App = () => {
           src="https://neon.tech/_next/static/svgs/9ee958f8b2be7694e4ce9140c14df68e.svg"
         />
         
-        {/* Bottom Borders */}
         <span 
           className="absolute inset-x-0 bottom-0 z-10 block h-px w-full bg-gray-new-98 bg-opacity-40 dark:hidden" 
           aria-hidden="true"
@@ -70,16 +49,15 @@ const App = () => {
           aria-hidden="true"
         ></span>
         
-        {/* Text with Gradient Effect */}
         <span 
           className="relative z-50 truncate py-1 text-sm font-medium tracking-tight text-[#E4E5E7] sm:text-[14px]"
         >
           Learn how Neon simplifies HIPAA compliance and scaling for multi-tenant SaaS
         </span>
         
-       
-       <IconChevronRight color={'#E4E5E7'}/>
+        <IconChevronRight color={'#E4E5E7'}/>
       </a>
+    
     </div>
   );
 };
