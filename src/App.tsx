@@ -9,6 +9,7 @@ import {
   IconArrowRightToArc,
 } from '@tabler/icons-react';
 import { FlickeringGrid } from './components/magicui/flickering-grid'
+import HeaderComponent from './Global/Navigation/HeaderComponent'
 
 const App = () => {
   return (
@@ -57,6 +58,7 @@ const App = () => {
         
         <IconChevronRight color={'#E4E5E7'}/>
       </a>
+      <HeaderComponent />
     
     </div>
   );
