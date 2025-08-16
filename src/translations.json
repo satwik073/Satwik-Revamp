@@ -1,0 +1,106 @@
+{
+    "en": {
+        "header": {
+            "title": "Learn how Neon simplifies files",
+            "subtitle": "Discover the power of modern file management"
+        },
+        "contact": {
+            "name": "Satwik Kanhere",
+            "email": "satwikkanhere2003@gmail.com",
+            "linkedin": "linkedin.com/in/satwikkanhere0730",
+            "phone": "+91-6284486063",
+            "github": "github.com/satwik073",
+            "portfolio": "satwik073.github.io/SatwikPortFolio/"
+        },
+        "education": {
+            "title": "Education",
+            "university": "Chitkara University Institute of Engineering and Technology",
+            "degree": "Bachelor of Engineering in Computer Science and Engineering",
+            "gpa": "CGPA: 9.36",
+            "location": "Chandigarh, India",
+            "duration": "2021 – 2025"
+        },
+        "research": {
+            "title": "Research & Publications",
+            "paper": "Lead Author - \"Blockchain and IoT for Healthcare: A Systematic Analysis\"",
+            "publisher": "Published in Springer's Algorithms for Intelligent Systems",
+            "points": [
+                "Authored comprehensive research paper exploring blockchain integration with IoT for healthcare systems",
+                "Collaborated with healthcare technology experts to validate practical implementation strategies"
+            ]
+        },
+        "experience": {
+            "title": "Professional Experience",
+            "sde1": {
+                "company": "WizCommerce",
+                "location": "Gurugram, India",
+                "position": "Software Development Engineer 1",
+                "duration": "July 2025 - Present",
+                "points": [
+                    "Implemented complex Product Information Management (PIM) feature",
+                    "Successfully deployed solution serving 50+ US clients with real-time data synchronization"
+                ]
+            },
+            "intern": {
+                "company": "WizCommerce",
+                "location": "Gurugram, India",
+                "position": "Software Engineer Intern",
+                "duration": "July 2024 - June 2025",
+                "points": [
+                    "Implemented Cloudflare HTTP/2 caching solutions, reducing average page load time to under 2 seconds",
+                    "Successfully integrated and deployed 3 major feature releases within first month"
+                ]
+            },
+            "infosys": {
+                "company": "Infosys",
+                "location": "Mysuru, India",
+                "position": "Application Developer Intern & Scrum Master",
+                "duration": "May 2024 – June 2024",
+                "points": [
+                    "Developed backend architecture using Node.js and Express.js with MongoDB integration",
+                    "Led daily standups and sprint planning for a 9-member agile team",
+                    "Delivered 4 sprint milestones on schedule while maintaining code quality standards"
+                ]
+            }
+        },
+        "projects": {
+            "title": "Notable Projects",
+            "arobix": {
+                "name": "Arobix: Enterprise Design Studio Platform",
+                "points": [
+                    "Engineered SaaS platform serving agency owners with Subdomain hosting, funnel building tools and Project Management Tools (Kanban)",
+                    "Integrated monitoring stack (Sentry) to track and resolve 10+ performance bottlenecks",
+                    "Tech Stack: Next.js, Prisma, MySQL, Cloudflare, Sentry"
+                ]
+            }
+        },
+        "skills": {
+            "title": "Technical Skills",
+            "programming": "Programming Languages: Java, JavaScript, TypeScript",
+            "frontend": "Frontend Development: HTML, TailwindCSS, React Native, React.js, Next.js",
+            "backend": "Backend Development: Node.js, Express.js, Kafka",
+            "databases": "Databases: PostgreSQL, NoSQL (MongoDB)",
+            "versionControl": "Version Control: Git, GitHub",
+            "devops": "DevOps Tools: Docker, Jenkins, Cloudflare",
+            "practices": "Software Practices: Agile, TDD, JIRA, Web Optimizations",
+            "monitoring": "Performance Monitoring: Sentry, Grafana"
+        },
+        "leadership": {
+            "title": "Leadership Highlight",
+            "description": "Collaborated with Apple Asia Head (Ashish Chowdhary) to develop assistive technology for visually impaired children, creating an iOS app that serves as an alternative to traditional Braille tools. Project currently supports students across local schools in Chandigarh."
+        },
+        "navigation": {
+            "home": "Home",
+            "about": "About",
+            "experience": "Experience",
+            "projects": "Projects",
+            "contact": "Contact"
+        },
+        "common": {
+            "viewMore": "View More",
+            "downloadCV": "Download CV",
+            "getInTouch": "Get in Touch",
+            "scrollDown": "Scroll Down"
+        }
+    }
+}
