@@ -16,7 +16,6 @@ const App = () => {
     <div className="w-full bg-black/10">
       <a 
         className="safe-paddings relative z-50 flex w-full items-center justify-center gap-x-2.5 overflow-hidden h-9 px-4 py-2.5 leading-none transition-colors duration-200 dark:bg-[#0B0C0F] bg-[#F5FBFD]" 
-        href="https://neon.tech/blog/hipaa-multitenancy-b2b-saas"
       >
         <span 
           className="absolute left-1/3 -z-10 h-[106px] w-[29px] origin-center -translate-y-1/2 rotate-[226deg] rounded-full mix-blend-plus-lighter blur-xl dark:opacity-100 sm:left-[35%] -top-2 z-40 bg-[linear-gradient(265.08deg,#FFFFFF_52.92%,rgba(255,255,255,0)_53.57%)] opacity-70"
@@ -37,7 +36,6 @@ const App = () => {
           decoding="async" 
           className="absolute left-1/3 top-0 z-10 [mask-image:linear-gradient(90deg,rgba(0,0,0,.1)_15%,black_70%,rgba(0,0,0,.1)_100%)] dark:opacity-100 sm:left-0 sm:translate-x-0 opacity-80 mix-blend-overlay" 
           style={{color: 'transparent'}} 
-          src="https://neon.tech/_next/static/svgs/9ee958f8b2be7694e4ce9140c14df68e.svg"
         />
         
         <span 
@@ -53,7 +51,7 @@ const App = () => {
         <span 
           className="relative z-50 truncate py-1 text-sm font-medium tracking-tight text-[#E4E5E7] sm:text-[14px]"
         >
-          Learn how Neon simplifies HIPAA compliance and scaling for multi-tenant SaaS
+          "The only way to learn a new programming language is by writing programs in it." - Dennis Ritchie
         </span>
         
         <IconChevronRight color={'#E4E5E7'}/>
