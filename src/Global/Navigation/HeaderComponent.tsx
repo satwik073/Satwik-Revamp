@@ -1,8 +1,8 @@
 import { BoxTypeIdentifier } from '@/Constants/__config_parameters'
-import { Linkedin, MailCheck, MessageCircle, PhoneCall } from 'lucide-react'
+import { MailCheck, MessageCircle, PhoneCall } from 'lucide-react'
 import React from 'react'
 import StoreNavigation from './StoreNavigation'
-import ImageLinks from '@/assets'
+
 
 
 const HeaderComponent = () => {
