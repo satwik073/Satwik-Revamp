@@ -1,6 +1,6 @@
 import { BoxTypeIdentifier } from '@/Constants/__config_parameters'
 import { STORE_NAVIGATION_ITEMS } from './storeNavigationConstants'
-import { Search, ShoppingBag, ShoppingCart } from 'lucide-react'
+import { Search, ShoppingBag} from 'lucide-react'
 
 const StoreNavigation = () => {
     return (
